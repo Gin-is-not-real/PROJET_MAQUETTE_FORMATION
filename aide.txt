@@ -1,0 +1,11 @@
+RACCOURCIS CLAVIER UTILES VISUAL CODE:
+    - commenter une ligne (au lieu d'effacer, pour tester par exemple, tu peux commenter une ligne): Ctrl + :
+
+classiques:
+    - couper: Ctrl + x
+    - copier: Ctrl + c 
+    - coller: Ctrl + v
+
+    - Ctrl + espace  -> visual code t'aide a voir les attributs que tu peux mettre, essaye par exemple de faire en css "color: ", et Ctrl + espace devrait te proposer des choix. c'est trés utile car ça te permet de voir tout ce que tu peut faire 
+
+    

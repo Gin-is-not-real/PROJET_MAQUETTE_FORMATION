@@ -1,0 +1,21 @@
+/* 
+Moi je commence par creer un fichier css "dev" ou je creer un style juste pour develloper, car par exemple mettre des bordures provisoires a mes elements m'aide a les placer, ou des couleurs provisoires pour bien distinguer les elements. quand je veux voir ce que ça donne j'ai juste à commenter la ligne dans le index.html "<link rel="stylesheet" href="style_dev.css" > "
+*/
+/*
+d'abors je me creer des variables "dev" 
+*/
+html {
+    /* 
+    là je creer ma variable, il faut écrire "--" + un nom de variable, et je vais demander une bordure de 1px noire en trait plein:
+    */
+    --dev-border: 1px solid black; 
+}
+
+/* 
+et la je vais demander a css de mettre sur tout mes elements div le style de bordure contenue dans ma variable "--dev-border"
+Il faut écrire: "border: var(--nom_de_ta_variable);", comme tu pourrais réecrire "border: 1px solid black;", mais c'est parfois bien utile
+*/
+html > div{
+    border: var(--dev-border);
+}
+
