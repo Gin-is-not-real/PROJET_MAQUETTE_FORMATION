@@ -1,0 +1,10 @@
+/* STYLE */
+
+#container_header {
+    background-color: grey;
+    /* display: flex; */
+}
+#section_dowload {
+    color: white;
+    background-color: black;
+}
