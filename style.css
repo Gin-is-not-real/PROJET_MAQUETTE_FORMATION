@@ -2,35 +2,71 @@
 /* h1, h3, section, header, footer, nav {
     border: 1px solid rgb(21, 22, 21);
 } */
+hr {
+    border: 1px solid black;
+    width: 20%;
+}
+html {
+    background-color: rgb(55, 55, 59);
+}
+h1, h2, h3, h5, p {
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-family: 'Arial Narrow', Arial, sans-serif;
+}
 .part_container {
     width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 /* HEADER */
-#part_header{
-    border: 1px solid black;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-}
-
 #container_header {
-    background-color: #808080;
     height: 400px;
+    color: black;
+    background-color: #808080;
+
+    background-size: 100% 100%;
+    background-image: url("ressources/fakes/bg_header.jpg");
+    background-clip: content-box;
+    background-repeat: no-repeat;
 }
 
 #section_menu {
-    height: 30%;
+    border: 1px solid black;
+    width: 60%;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
+#figure_logo_header {
+    grid-column: 1;
+    /* width: 5%;
+    height: 30%; */
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    justify-self: end;
+
+    margin: 2%;
+}
+#figure_logo_header > img {
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+}
 #button_menu {
+    grid-column: 3;
     width: max-content;
     height: max-content;
-    align-self: center;
+    justify-self: start;
+    margin: 2%;
 }
 
+.section_header {
+    /* border: 1px solid black; */
+}
 #section_accroche {
     /* border: 1px solid white; */
     width: 100%;
@@ -56,7 +92,19 @@
     margin: 0 auto;
 }
 
-#section_download {
+/* #section_download {
+    color: white;
+    background-color: black;
+    width: 100%;
+    height: 10%;
+    padding: 2% 0;
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+} */
+#part_download {
     color: white;
     background-color: black;
     width: 100%;
@@ -107,8 +155,20 @@
     margin: 0 auto;
     text-align: center;
 }
+/* CITATION */
+#part_article {
+    color: white;
+    background-size: 100%;
 
+    background-image: url("ressources/fakes/bg_citation.jpg");
+    background-clip: border-box;
+    background-color: tomato;
+}
 /* PORTFOLIO */
+#part_portfolio {
+    color: white;
+
+}
 .section_buttons {
     border: 1px solid black;
     width: 40%;
@@ -136,19 +196,27 @@
     grid-row: 50%;
     grid-gap: 2%;
     margin: 0 auto;
+
 }
 
+.img_portfolio {
+    background-size: 100% 100%;
+    background-color: teal;
+}
 #img_1 {
     grid-row: 1;
     grid-column: 1;
+    background-image: url("ressources/fakes/tothefuture.jpg");
 }
 #img_2 {
     grid-row: 1;
     grid-column: 2;
+    background-image: url("ressources/fakes/astrogirl.jpg");
 }
 #img_3 {
     grid-row: 1;
     grid-column: 3;
+    background-image: url("");
 }
 #img_4 {
     grid-row: 2;
@@ -178,3 +246,75 @@
     min-width: max-content;
     max-width: max-content;
 }
+
+/* FOR HELP ME TO SEE INTER SECTIONS */
+#part_newsletter {
+    background-color: black;
+    color: white;
+    height: 50px;
+}
+#part_newsletter > p {
+    color: white;
+    text-align: center;
+}
+
+/* CONTACT */
+#part_contact {
+
+}
+#modes_contact {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 50%;
+    margin: 2% auto;
+
+
+}
+
+#form_contact {
+    margin: 0 auto;
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column: 50%;
+    /* grid-row: 50%; */
+    grid-gap: 1%;
+    margin: 0 auto;
+}
+.fig_contact {
+    background-size: 100% 100%;
+    background-clip: content-box;
+    background-image: url("ressources/codelogo.jpg");
+}
+.div_form {
+    border: 1px solid black;
+}
+#div_form_inputs, #div_form_textarea {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: stretch; */
+}
+#div_form_inputs {
+    grid-column: 1;
+    grid-row: 1;
+}
+#div_form_textarea {
+    grid-column: 2;
+    grid-row: 1;
+}
+.input_form {
+    grid-column: 2/2;
+    grid-row: 2;
+
+    margin: 1%;
+    padding: 1%;
+    width: 95%;
+    max-width: 95%;
+}
+/* #div_form_submit {
+    width: 100%;
+    flex-grow: 2;
+} */
