@@ -1,0 +1,63 @@
+/* provisoire */
+.part-container, .central-container, div, section, figure {
+    /* border: 1px solid black; */
+}
+
+html {
+    background-color: grey;
+}
+body {
+    /* min-width: 600px; */
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: grey;
+}
+
+hr {
+    border: 1px solid black;
+    width: 20%;
+    margin: 0 auto;
+}
+.button-menu {
+    min-width: max-content;
+    width: 20%;
+}
+/* FONTS */
+h1, h2{
+    font-family: 'Montserrat', sans-serif;
+}
+h3, h5, p  {
+    font-family: 'Montserrat', sans-serif, lighter;
+}
+
+/* CONTAINERS */
+#general-container * {
+    
+}
+.part-container-black, .part-container-white, .part-container-img {
+    /* width: 100%; */
+    margin: 0 auto;
+}
+.part-container-black {
+    background-color: black;
+    color: white;
+}
+.part-container-white {
+    background-color: white;
+}
+.part-container-img {
+    background-color: teal;
+    background-size: 100%;
+    background-clip: border-box;
+
+}
+.central-container {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.central-container > section, .center-container > * {
+    margin: 0 auto;
+}
