@@ -12,17 +12,22 @@ html {
 h1, h2, h3, h5, p {
     /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
     /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
-    font-family: 'Arial Narrow', Arial, sans-serif;
+    /* font-family: 'Arial Narrow', Arial, sans-serif; */
+    font-family: 'Rajdhani', sans-serif;
+}
+body {
+    max-width: 800px;
+    margin: 0 auto;
 }
 .part_container {
     width: 100%;
-    max-width: 900px;
     margin: 0 auto;
 }
 
 /* HEADER */
 #container_header {
-    height: 400px;
+    height: 350px;
+    /* height: 100%; */
     color: black;
     background-color: #808080;
 
@@ -33,7 +38,7 @@ h1, h2, h3, h5, p {
 }
 
 #section_menu {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 60%;
     margin: 0 auto;
     display: flex;
@@ -46,7 +51,7 @@ h1, h2, h3, h5, p {
     height: 30%; */
     width: 30px;
     height: 30px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     justify-self: end;
 
     margin: 2%;
@@ -166,7 +171,7 @@ h1, h2, h3, h5, p {
 }
 /* PORTFOLIO */
 #part_portfolio {
-    color: white;
+    background-color: white;
 
 }
 .section_buttons {
