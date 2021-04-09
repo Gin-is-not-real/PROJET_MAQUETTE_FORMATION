@@ -9,7 +9,7 @@ body {
     margin: 0 auto;
     background-color: grey;
     font-family: 'Montserrat', sans-serif;
-    text-shadow: gray;
+    /* text-shadow: rgb(226, 226, 226) 0px 1px; */
 }
 
 hr {
@@ -17,15 +17,22 @@ hr {
     width: 20%;
     margin: 2% auto;
 }
+p {
+    /* padding-top: 4%; */
+    font-size: 60%;
+}
 
-/* FONTS */
-h1, h2, h3 {
+
+/* h */
+h1, h2, h3, h4 {
     font-weight: 600;
     text-align: center;
 }
-h4, h5, h6, p {
+h5, h6, p {
     font-weight: normal;
     text-align: center;
+    margin: 0 auto;
+    padding-bottom: 3%;
 }
 
 /* CONTAINERS */
@@ -61,49 +68,71 @@ h4, h5, h6, p {
 
 /* SECTIONHEADER */
 .section-header {
-    /* border: 1px solid black; */
     width: 80%;
     display: flex;
     flex-direction: column;
     margin: 5% auto;
 }
-.section-header > * {
-    text-align: center;
-    margin: 1% auto;
+.section-header h4 {
+    margin: 0 auto 2% auto;
 }
-.section-header > p {
-    margin-top: 5%;
+.section-header hr {
+    margin-bottom: 6%;
 }
-
+.section-header p {
+    padding: 0;
+    padding-bottom: 1%;
+    color: rgb(119, 119, 119);
+}
 /* BUTTONS */
-
-.button-transparent, #button-submit  {
+.button-transparent, .button-black {
+    min-width: max-content;
+    width: 100px;
     border-radius: 1px;
     padding: 2% 4%;
     font-size: 50%;
-    font-weight: normal;
+    font-weight: bolder;
 }
 .button-transparent {
     background-color: transparent;
+    border: 1px solid rgb(119, 119, 119);
+    margin-bottom: 1%;
+}
+.button-black {
+    background-color: black;
+    color: white;
     border: 1px solid black;
     margin-bottom: 1%;
 }
-.button-transparent :hover{
-    background-color: black;
-    color: blanchedalmond;
+#button-menu {
+    background-clip: content-box;
+    background-image: url("ressources/serious/icon-menu.gif");
+    background-color: transparent;
+    border: none;
+    grid-column: 3;
+    width: max-content;
+    height: max-content;
+    justify-self: start;
 }
-
 #button-download {
+    border: white;
     font-size: 50%;
     font-weight: normal;
     padding: 1%;
+}
+#button-start {
+    margin: 0 auto; 
+    padding: 2% 4%;
+    font-weight: bold;
+    color: white;
+    border: 1px solid black;
 }
 /* IMG */
 figure {
     margin: 0;
 }
 .logo img, .img-logo {
-    background-size: 100% 100%;
+    background-size: 20px 20px;
     width: 40px;
     height: 40px;
 }
@@ -112,18 +141,15 @@ figure {
     margin: 0;
     text-align: center;
 }
+.icon figcaption {
+    color: rgb(116, 116, 116);
+
+}
 .img-icon {
-    /* border: 1px solid white; */
     background-size: 100% 100%;
     width: 20px;
     height: 20px;
     justify-self: center;
-}
-.icon img{
-    justify-self: center;
-    background-size: 100% 100%;
-    width: 30px;
-    height: 30px;
 }
 
 .caption-logo {
@@ -132,10 +158,8 @@ figure {
 }
 
 figure figcaption, div figcaption {
-    /* border: 1px solid black; */
     font-family: 'Montserrat', sans-serif;
-    font-size: 3mm;
+    font-size: 2.5mm;
     margin: 2% -20%;
-    /* width: max-content; */
 }
 
