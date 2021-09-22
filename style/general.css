@@ -8,7 +8,13 @@ body {
     /* min-width: 500px; */
     margin: 0 auto;
     background-color: grey;
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Gotu', sans-serif;
+    /* font-family: 'Caveat'; */
+    /* font-family: 'Permanent Marker', cursive; */
+    /* font-family: 'Merriweather', serif; */
+    /* font-style: italic; */
+
     /* text-shadow: rgb(226, 226, 226) 0px 1px; */
 }
 
